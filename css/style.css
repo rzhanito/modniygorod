@@ -1,0 +1,322 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-size: 62.5%;
+  font-weight: normal;
+  background-image: linear-gradient(
+    to right top,
+    #060606,
+    #050504,
+    #030303,
+    #020201,
+    #000000
+  );
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button,
+input {
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+.container {
+  width: 120rem;
+  margin: 0 auto;
+}
+/* style reset end  */
+
+:root {
+  --text-size-medium: 1.6rem;
+}
+
+/* ___________________________________________________________________ */
+/* ___________________________________________________________________ */
+/* ___________________________________________________________________ */
+/* ___________________________________________________________________ */
+/* ___________________________________________________________________ */
+/* ___________________________________________________________________ */
+/* ___________________________________________________________________ */
+/* ___________________________________________________________________ */
+/* ___________________________________________________________________ */
+/* ___________________________________________________________________ */
+/* ___________________________________________________________________ */
+/* ___________________________________________________________________ */
+/* ___________________________________________________________________ */
+/* ___________________________________________________________________ */
+/* ___________________________________________________________________ */
+/* ___________________________________________________________________ */
+/* ___________________________________________________________________ */
+/* ___________________________________________________________________ */
+/* ___________________________________________________________________ */
+/* ___________________________________________________________________ */
+/* ___________________________________________________________________ */
+/* ___________________________________________________________________ */
+/* ___________________________________________________________________ */
+/* header start */
+
+body {
+  overflow-x: hidden;
+}
+.header {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 3.5rem;
+  padding-right: 8.8rem;
+}
+.background-image {
+  position: relative;
+}
+.menu {
+  display: flex;
+}
+.menu-links {
+  font-size: 1.6rem;
+  line-height: 110%;
+  margin-right: 11rem;
+}
+.menu-link {
+  display: inline-block;
+  padding: 0.9rem 1.9rem;
+  transition: all 0.2s;
+}
+.menu-link:hover {
+  align-items: center;
+  text-align: center;
+  font-size: 1.6rem;
+  background-color: #bb3131;
+  border-radius: 4rem;
+}
+.menu-link:not(:last-child) {
+  margin-right: 3.5rem;
+}
+.button {
+  display: inline-block;
+  height: 4.3rem;
+  width: 12.9rem;
+  align-items: center;
+  text-align: center;
+  padding: 1rem 1.5rem;
+  font-size: 1.6rem;
+  background-color: #bb3131;
+  border-radius: 4rem;
+}
+.main {
+  background-color: #2f904a;
+}
+.main-head {
+  position: absolute;
+  top: 25rem;
+  padding-left: 7.5rem;
+}
+.head-title {
+  margin-bottom: 2rem;
+  font-weight: 700;
+  font-size: 7.8rem;
+  letter-spacing: 0.025em;
+  line-height: 130.52%;
+  max-width: 45rem;
+}
+.head-text {
+  color: #cee1e1;
+  font-weight: 500;
+  line-height: 130%;
+  letter-spacing: 0.025em;
+  font-size: 36px;
+  max-width: 41.5rem;
+}
+
+/* head finish */
+
+/* about start */
+.about {
+  padding-top: 14rem;
+}
+.bg-green {
+  background-color: #2f904a;
+}
+.about-title {
+  text-align: center;
+  font-weight: 500;
+  font-size: 4.8rem;
+  line-height: 130.52%;
+  color: #cee1e1;
+  letter-spacing: 0.025em;
+}
+.about-content {
+  padding-top: 11.5rem;
+  display: flex;
+  align-items: center;
+}
+.image-hernya {
+  object-fit: cover;
+  display: block;
+  margin-right: 10rem;
+  min-height: 48.7rem;
+  max-width: 51.5rem;
+  border-radius: 4.5rem;
+}
+.about-description {
+  padding-left: 4.3rem;
+  max-width: 51.6rem;
+  max-height: 36.1rem;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 180.02%;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* about finish */
+
+/* service start */
+
+.service {
+  margin-top: 18rem;
+}
+.service-title {
+  padding-top: 2rem;
+  text-align: center;
+  font-weight: 500;
+  font-size: 4.8rem;
+  line-height: 130.52%;
+  color: #cee1e1;
+  letter-spacing: 0.025em;
+  margin-bottom: 17rem;
+
+  /* 
+  display: inline-block;
+  text-align: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 4.8rem;
+  line-height: 130.52%;
+  letter-spacing: 0.21em; */
+}
+.service-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+.service-card {
+  position: relative;
+  margin-bottom: 10rem;
+}
+.service-image {
+}
+.card-image {
+  object-fit: cover;
+  min-height: 42rem;
+  max-width: 44.4rem;
+  display: block;
+  border-radius: 4.4rem;
+  overflow: hidden;
+}
+.service-text {
+  position: absolute;
+  bottom: 5rem;
+  padding-left: 3rem;
+}
+
+.service-name {
+  font-weight: 700;
+  font-size: 3.2rem;
+  max-width: 25.9rem;
+  max-height: 7.3rem;
+  margin-bottom: 3.5rem;
+}
+.service-price {
+  font-weight: 600;
+  font-size: 2.4rem;
+  line-height: 90.52%;
+}
+
+.service-button {
+  margin-left: 55rem;
+  margin-right: 55rem;
+}
+/* service finish */
+
+/* modal start */
+/* .modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  z-index: 10;
+  padding: 3rem 0;
+  background: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  display: none;
+}
+.modal-closebutton {
+  position: absolute;
+  width: 4rem;
+  height: 4rem;
+  cursor: pointer;
+  top: 2rem;
+  right: 2rem;
+  background-color: grey;
+  border-radius: 50%;
+}
+.modal-inner {
+  position: relative;
+  background: #2c2c2c;
+  width: 66.3rem;
+  padding: 9rem 0;
+}
+.modal-title {
+  font-weight: 700;
+  font-size: 4.8rem;
+  line-height: 140%;
+  margin-bottom: 1rem;
+}
+.modal-subtitle {
+  font-size: var(--text-size-medium);
+  line-height: 160%;
+  margin-bottom: 2.8rem;
+  opacity: 0.5;
+}
+.modal-input {
+  width: 45.4rem;
+  margin: 0 auto 3.2rem auto;
+}
+ */
+/* adaptive */
+/* blya ne smog sdelat' :( */
+/* adaptive */
