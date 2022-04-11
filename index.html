@@ -12,6 +12,8 @@
       rel="stylesheet">
    <link rel="stylesheet" href="css/normalize.css">
    <link rel="stylesheet" href="css/style.css">
+   <script src="js/modals.js" defer></script>
+   <script src="js/main.js"></script>
    <title>Модный город 312</title>
 </head>
 
@@ -26,8 +28,8 @@
          <div class="menu-links">
             <a href="#about" class="menu-link">О нас</a>
             <a href="#service" class="menu-link">Услуги</a>
-            <a href="#" class="menu-link">Мастера</a>
-            <a href="#" class="menu-link">Контакты</a>
+            <a href="#team" class="menu-link">Мастера</a>
+            <a href="#social" class="menu-link">Контакты</a>
          </div>
          <a href="#" class="button header-button">Записаться</a>
          <!-- /.menu-links -->
@@ -60,7 +62,7 @@
 
       <section class="service bg-green" id="service">
          <div class="container">
-            <h2 class="service-title">Наши услуги </h2>
+            <h2 class="service-title section-title">Наши услуги </h2>
             <div class="service-wrap">
                <div class="service-card">
                   <div class="service-image"><img src="img/hernya.jpg" alt="kartinka uslugi" class="card-image"></div>
@@ -110,12 +112,124 @@
          </div>
       </section>
       <!-- /.service -->
+
+      <section class="team" id="team">
+         <div class="container">
+            <h2 class="team-title section-title">Наши мастера</h2>
+            <div class="team-wrap">
+
+               <div class="team-master">
+                  <div class="master-image"><img src="img/nazeshkin.png" alt="master photo"></div>
+                  <h3 class="master-name">Назима</h3>
+                  <button type="button" class="master-more">Подробнее</button>
+
+               </div>
+               <!-- /.team-master -->
+
+               <div class="team-master">
+                  <div class="master-image"><img src="img/nazeshkin.png" alt="master photo"></div>
+                  <h3 class="master-name">Назима</h3>
+                  <button type="button" class="master-more">Подробнее</button>
+
+               </div>
+               <!-- /.team-master -->
+
+               <div class="team-master">
+                  <div class="master-image"><img src="img/nazeshkin.png" alt="master photo"></div>
+                  <h3 class="master-name">Назима</h3>
+                  <button type="button" class="master-more">Подробнее</button>
+
+               </div>
+               <!-- /.team-master -->
+
+               <div class="team-master">
+                  <div class="master-image"><img src="img/nazeshkin.png" alt="master photo"></div>
+                  <h3 class="master-name">Назима</h3>
+                  <button type="button" class="master-more">Подробнее</button>
+
+               </div>
+               <!-- /.team-master -->
+
+               <div class="team-master">
+                  <div class="master-image"><img src="img/nazeshkin.png" alt="master photo"></div>
+                  <h3 class="master-name">Назима</h3>
+                  <button type="button" class="master-more">Подробнее</button>
+
+               </div>
+               <!-- /.team-master -->
+
+               <div class="team-master">
+                  <div class="master-image"><img src="img/nazeshkin.png" alt="master photo"></div>
+                  <h3 class="master-name">Назима</h3>
+                  <button type="button" class="master-more">Подробнее</button>
+
+               </div>
+               <!-- /.team-master -->
+            </div>
+            <!-- /.team-wrap -->
+         </div>
+      </section>
+      <!-- /.team -->
+
+      <section class="social" id="social">
+         <div class="container">
+            <h2 class="section-title social-title">Связаться с нами</h2>
+            <div class="social-wrap">
+               <a href="https://wa.me/79256293268" target="_blankd" class="social-wapp social-block">
+                  <div class="social-link">
+                     <img class="social-logo" src="img/whatsapp.svg" alt="whatsapp logo"><span
+                        class="social-link-text">Написать</span>
+                  </div>
+               </a>
+               <a href="https://t.me/amizanka" target="_blankd" class="social-telegram social-block">
+                  <div class="social-link">
+                     <img class="social-logo" src="img/telegram.svg" alt="telegram logo"><span
+                        class="social-link-text">Написать</span>
+                  </div>
+               </a>
+               <a href="https://instagram.com/mgorod312" target="_blankd" class="social-instagram social-block">
+                  <div class="social-link">
+                     <img class="social-logo" src="img/instagram.svg" alt="instagram logo"><span
+                        class="social-link-text">Перейти</span>
+                  </div>
+               </a>
+            </div>
+         </div>
+      </section>
+      <!-- /.social -->
+
+      <form action="/php/send.php" method="post" class="modal-visit">
+         <div class="visit-inner">
+            <div class="form__item">
+               <input class="form__input" type="text" name="name" required>
+               <label class="form__label">Ваше имя</label>
+            </div>
+            <div class="form__item">
+               <input class="form__input" type="text" name="phone" required>
+               <label class="form__label">Номер телефона</label>
+            </div>
+
+            <div class="form__item">
+               <input type="text" class="form__input" name="serve" required>
+               <label class="form__label">Выберите услугу</label>
+            </div>
+            <input class="form__input btn" type="submit" value="Отправить">
+            <input type="hidden" name="act" value="order">
+         </div>
+         <!-- /.visit-inner -->
+      </form>
+      <!-- /.modal-visit -->
+
    </main>
    <!-- /.main -->
    <footer class="footer">
       <div class="container"></div>
    </footer>
    <!-- /.footer -->
+
+   <?php 
+     include 'php/send.php' 
+   ?>
 </body>
 
 </html>
