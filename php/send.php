@@ -10,7 +10,6 @@ $chat_id = "-703614894";
 if ($_POST['act'] == 'order') {
    $name = ($_POST['name']);
    $phone = ($_POST['phone']);
-   $serve = ($_POST['serve']);
    //Собираем в массив то, что будет передаваться боту
    $arr = array(
       'Имя:' => $name,
