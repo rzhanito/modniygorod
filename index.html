@@ -30,7 +30,7 @@
             <a href="#team" class="menu-link">Мастера</a>
             <a href="#social" class="menu-link">Контакты</a>
          </div>
-         <a href="#" class="button header-button">Записаться</a>
+         <button class="button header-button">Записаться</button>
          <!-- /.menu-links -->
       </nav>
    </header>
@@ -40,6 +40,7 @@
       <section class="main-head">
          <h1 class="head-title">Модный город 312</h1>
          <div class="head-text">Раскроем всю красоту, таящуюся в Вас!</div>
+         <button class="button main-button">Записаться</button>
       </section>
 
       <section class="about bg-green" id="about">
@@ -106,8 +107,9 @@
                   </div>
                </div>
             </div>
-            <!-- /.service-wrap -->
+
             <a href="#" class="button service-button">Записаться</a>
+            <!-- /.service-wrap -->
          </div>
       </section>
       <!-- /.service -->
@@ -197,27 +199,34 @@
       </section>
       <!-- /.social -->
 
-      <form action="php/send.php" method="post" class="modal-visit">
-         <div class="visit-inner">
-            <div class="form__item">
-               <input class="form__input" type="text" name="name" required>
-               <label class="form__label">Ваше имя</label>
+      <section class="form-modal">
+         <form action="php/send.php" method="post" class="modal-visit">
+            <div class="visit-inner">
+               <div class="visit-header">
+                  <img src="img/close-modal.svg" alt="close svg" class="modal-close visit-close">
+                  <h3 class="visit-title">Записаться</h3>
+               </div>
+               <div class="visit-wrap">
+                  <div class="visit-item">
+                     <input type="text" name="name" id="name" class="item-input" required
+                        placeholder="Введите ваше имя">
+                  </div>
+                  <div class="visit-item">
+                     <input type="tel" name="phone" id="phone" class="item-input" required
+                        placeholder="Введите номер вашего телефона">
+                  </div>
+                  <div class="visit-item">
+                     <input type="text" name="option" id="option" class="item-input" required
+                        placeholder="Введите название услуги">
+                  </div>
+               </div>
+               <button type="submit" class="button visit-button">Отправить</button>
             </div>
-            <div class="form__item">
-               <input class="form__input" type="text" name="phone" required>
-               <label class="form__label">Номер телефона</label>
-            </div>
-
-            <!-- <div class="form__item">
-               <input type="text" class="form__input" name="serve" required>
-               <label class="form__label">Выберите услугу</label>
-            </div> -->
-            <input class="form__input btn" type="submit" value="Отправить">
-            <input type="hidden" name="act" value="order">
-         </div>
-         <!-- /.visit-inner -->
-      </form>
-      <!-- /.modal-visit -->
+            <!-- /.visit-inner -->
+         </form>
+         <!-- /.modal-visit -->
+      </section>
+      <!-- /.form-modal -->
 
    </main>
    <!-- /.main -->
